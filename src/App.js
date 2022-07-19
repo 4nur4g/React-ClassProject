@@ -23,7 +23,12 @@ function App() {
     },
   ];
 
-  return <NewComponentExpenses expenses={expenses}></NewComponentExpenses>;
+  return (
+    <div>
+      <h2>Let's get started!</h2>
+      <NewComponentExpenses expenses={expenses}></NewComponentExpenses>{" "}
+    </div>
+  );
 }
 
 export default App;

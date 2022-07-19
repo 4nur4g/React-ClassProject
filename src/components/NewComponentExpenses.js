@@ -4,7 +4,6 @@ import "./NewComponentExpenses.css";
 function NewComponentexpenses(props) {
   return (
     <div className="expenses">
-      <h2>Let's get started!</h2>
       <ExpenseItem
         title={props.expenses[0].title}
         amount={props.expenses[0].amount}
