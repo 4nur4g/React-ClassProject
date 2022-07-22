@@ -25,21 +25,21 @@ const DUMMY_EXPENSES = [
   },
 ];
 
+// const App = () => {
+//   const [expenses, SetExpenses] = useState(DUMMY_EXPENSES);
+
+//   const addExpenseHandler = (expense) => {
+//     SetExpenses((prevExpenses) => {
+//       return [expense, ...prevExpenses];
+//     });
+//   };
+
 const App = () => {
   const [expenses, SetExpenses] = useState(DUMMY_EXPENSES);
 
   const addExpenseHandler = (expense) => {
-    SetExpenses((prevExpenses) => {
-      return [expense, ...prevExpenses];
-    });
+    SetExpenses([expense, ...expenses]);
   };
-
-  // const App = () => {
-  //   const [expenses, SetExpenses] = useState(DUMMY_EXPENSES);
-
-  //   const addExpenseHandler = (expense) => {
-  //     return [expense, ...expenses];
-  //   };
 
   // Test this ⬆️ code later
 
